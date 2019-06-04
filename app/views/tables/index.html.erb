@@ -1,0 +1,16 @@
+<div class="container ctnr-menu">
+  <div class="row">
+    <% @tables.each_slice(6) do |row| %>
+    <% row.each do |table| %>
+    <div class="col">
+      <div class="card">
+        <%= link_to "#{table.name}", menus_url, class: 'btn btn-success' %>
+      </div>
+    </div>
+    <% end %>
+    <div class="w-100 btn-space">
+
+    </div>
+    <% end %>
+  </div>
+</div>

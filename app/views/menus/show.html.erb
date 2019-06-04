@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-5 m-auto">
+      <div class="card mt-lg-5 bg-white">
+        <div class="card-title text-center mt-3">
+          <%= image_tag "LogoCkunzaTilar.png", size: "150x110" %>
+        </div>
+        <h1>Selección de <%= @menu.name %></h1>
+        <div class="card">
+          <% @menu.foods.each do |food| %>
+          <div class="input-group-text">
+              <td><%= link_to "#{food.name}", menus_url, class: 'btn btn-primary btn-lg btn-block' %></td>
+              <%# <%= link_to "Agregar al carro", menu_food_orders_path(menu_food), class: 'btn btn-success', method: :post  %>
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <%= link_to 'Atrás', menus_path, class: 'btn btn-success btn-lg btn-block' %>
+  </div>
+</div>
+
+<br>

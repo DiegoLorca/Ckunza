@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-5 m-auto">
+      <div class="card mt-5 bg-dark">
+        <div class="card-title text-center mt-3">
+          <%= image_tag "LogoCkunzaTilar.png", size: "150x110" %>
+        </div>
+        <div class="card-body">
+          <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-user fa-2x"></i>
+                </span>
+              </div>
+              <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control py-4', placeholder: 'Email del Usuario' %>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-lock fa-2x"></i>
+                </span>
+              </div>
+              <%= f.password_field :password, autocomplete: "current-password", class: 'form-control py-4', placeholder: 'Contraseña del Usuario' %>
+            </div>
+            <% if devise_mapping.rememberable? %>
+              <div class="field">
+                <%= f.check_box :remember_me %>
+                <%= f.label :remember_me, "Recordarme", class: 'text-white' %>
+              </div>
+            <% end %>
+            <div class="actions">
+              <%= f.submit "Iniciar Sesión", class: 'btn btn-success' %>
+            </div>
+          <% end %>
+          <%= render "devise/shared/links" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

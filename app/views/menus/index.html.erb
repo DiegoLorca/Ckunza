@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-5 m-auto">
+      <div class="card mt-lg-5 bg-white">
+        <div class="card-title text-center mt-3">
+          <%= image_tag "LogoCkunzaTilar.png", size: "150x110" %>
+        </div>
+        <div class="card">
+          <% @menus.each do |menu| %>
+              <div class="input-group-text">
+                <td><%= link_to "#{menu.name}", menu, class: 'btn btn-primary btn-lg btn-block' %></td>
+              </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <%= link_to 'Atrás', tables_path, class: 'btn btn-success btn-lg btn-block' %>
+  </div>
+</div>

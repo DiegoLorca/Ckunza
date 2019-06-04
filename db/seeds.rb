@@ -1,0 +1,110 @@
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+#
+# Examples:
+#
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', movie: movies.first)
+# User.destroy_all
+# Table.destroy_all
+# Menu.destroy_all
+# Food.destroy_all
+#
+# User.create(name: "admin", email: "admin@ckunzatilar.cl", password: "12345678")
+# 5.times do |i|
+#   User.create!(name: "Mesero #{1 + i}", email: "mesero#{1 + i}@ckunzatilar.cl", password: "12345678")
+# end
+# 2.times do |i|
+#   User.create!(name: "Cocinero #{1 + i}", email: "cocinero#{1 + i}@ckunzatilar.cl", password: "12345678")
+# end
+#
+# 12.times do |i|
+#   Table.create!(name: "Mesa #{1 + i}")
+# end
+#
+# menus = []
+# menus << Menu.create!({ name: "Desayuno" })
+# menus << Menu.create!({ name: "Sandwish y Fajita" })
+# menus << Menu.create!({ name: "Lomo Vetado" })
+# menus << Menu.create!({ name: "Pechuga de Pollo" })
+# menus << Menu.create!({ name: "Reineta" })
+# menus << Menu.create!({ name: "Salmón" })
+# menus << Menu.create!({ name: "Platos Vegetarianos" })
+# menus << Menu.create!({ name: "Platos Extras" })
+# menus << Menu.create!({ name: "Bebida" })
+# menus << Menu.create!({ name: "Jugo" })
+
+foods = []
+foods << Food.create!({ name:"Quesadilla Pollo", menu_id: 11 })
+foods << Food.create!({ name:"Quesadilla Carne", menu_id: 11 })
+foods << Food.create!({ name:"Quesadilla Champiñón", menu_id: 11 })
+foods << Food.create!({ name:"Omelet Vegetariano con Queso", menu_id: 11 })
+foods << Food.create!({ name:"Huevo Revuelto", menu_id: 11 })
+foods << Food.create!({ name:"Huevo Frito", menu_id: 11 })
+foods << Food.create!({ name:"Té", menu_id: 11 })
+foods << Food.create!({ name:"Café Expreso", menu_id: 11 })
+foods << Food.create!({ name:"Sandwish", menu_id: 12 })
+foods << Food.create!({ name:"Fajita", menu_id: 12 })
+foods << Food.create!({ name:"A la Plancha", menu_id: 13 })
+foods << Food.create!({ name:"Salsa BBQ", menu_id: 13 })
+foods << Food.create!({ name:"Salsa Merlot y Chañar", menu_id: 13 })
+foods << Food.create!({ name:"Salsa de Champiñones", menu_id: 13 })
+foods << Food.create!({ name:"Salsa Ostras con Champiñones", menu_id: 13 })
+foods << Food.create!({ name:"Salsa de Finas Hierbas", menu_id: 13 })
+foods << Food.create!({ name:"Salsa de Vodka", menu_id: 13 })
+foods << Food.create!({ name:"Salsa de Piña", menu_id: 13 })
+foods << Food.create!({ name:"A la Plancha", menu_id: 14 })
+foods << Food.create!({ name:"Salsa BBQ", menu_id: 14 })
+foods << Food.create!({ name:"Salsa Merlot y Chañar", menu_id: 14 })
+foods << Food.create!({ name:"Salsa de Champiñones", menu_id: 14 })
+foods << Food.create!({ name:"Salsa Ostras con Champiñones", menu_id: 14 })
+foods << Food.create!({ name:"Salsa de Finas Hierbas", menu_id: 14 })
+foods << Food.create!({ name:"Salsa de Vodka", menu_id: 14 })
+foods << Food.create!({ name:"Salsa de Piña", menu_id: 14 })
+foods << Food.create!({ name:"A la Plancha", menu_id: 15 })
+foods << Food.create!({ name:"Salsa de Naranja", menu_id: 15 })
+foods << Food.create!({ name:"Salsa Rika Rika", menu_id: 15 })
+foods << Food.create!({ name:"Salsa de Camarón", menu_id: 15 })
+foods << Food.create!({ name:"Salsa a lo Macho", menu_id: 15 })
+foods << Food.create!({ name:"Salsa de Finas Hierbas", menu_id: 15 })
+foods << Food.create!({ name:"Salsa de Margarita", menu_id: 15 })
+foods << Food.create!({ name:"Apanado", menu_id: 15 })
+foods << Food.create!({ name:"A la Plancha", menu_id: 16 })
+foods << Food.create!({ name:"Salsa de Naranja", menu_id: 16 })
+foods << Food.create!({ name:"Salsa Rika Rika", menu_id: 16 })
+foods << Food.create!({ name:"Salsa de Camarón", menu_id: 16 })
+foods << Food.create!({ name:"Salsa a lo Macho", menu_id: 16 })
+foods << Food.create!({ name:"Salsa de Finas Hierbas", menu_id: 16 })
+foods << Food.create!({ name:"Salsa de Margarita", menu_id: 16 })
+foods << Food.create!({ name:"Apanado", menu_id: 16 })
+foods << Food.create!({ name:"Espaguetti Oriental", menu_id: 17 })
+foods << Food.create!({ name:"Quinoto Vegetariano", menu_id: 17 })
+foods << Food.create!({ name:"Ensalada Ckunza Tilar", menu_id: 17 })
+foods << Food.create!({ name:"Ceviche Salmón", menu_id: 18 })
+foods << Food.create!({ name:"Ceviche Reineta", menu_id: 18 })
+foods << Food.create!({ name:"Ceviche Reineta Camarón", menu_id: 18 })
+foods << Food.create!({ name:"Ceviche Reineta Palta", menu_id: 18 })
+foods << Food.create!({ name:"Ceviche Mixto", menu_id: 18 })
+foods << Food.create!({ name:"Quinoto Pesto Pollo", menu_id: 18 })
+foods << Food.create!({ name:"Quinoto Pesto Lomo", menu_id: 18 })
+foods << Food.create!({ name:"Quinoto Pesto Salmón", menu_id: 18 })
+foods << Food.create!({ name:"Quinoto Pesto Reineta", menu_id: 18 })
+foods << Food.create!({ name:"Chorrillana Pollo", menu_id: 18 })
+foods << Food.create!({ name:"Chorrillana Lomo", menu_id: 18 })
+foods << Food.create!({ name:"Chorrillana Mixta", menu_id: 18 })
+foods << Food.create!({ name:"Chorrillana Vegetariana", menu_id: 18 })
+foods << Food.create!({ name:"Coca Cola", menu_id: 19 })
+foods << Food.create!({ name:"Fanta", menu_id: 19 })
+foods << Food.create!({ name:"Sprite", menu_id: 19 })
+foods << Food.create!({ name:"Pepsi", menu_id: 19 })
+foods << Food.create!({ name:"Bilz", menu_id: 19 })
+foods << Food.create!({ name:"Pap", menu_id: 19 })
+foods << Food.create!({ name:"Limón Soda", menu_id: 19 })
+foods << Food.create!({ name:"Agua Mineral Sin Gas", menu_id: 19 })
+foods << Food.create!({ name:"Agua Mineral Con Gas", menu_id: 19 })
+foods << Food.create!({ name:"Jugo de Melón", menu_id: 20 })
+foods << Food.create!({ name:"Jugo de Mango", menu_id: 20 })
+foods << Food.create!({ name:"Limonada", menu_id: 20 })
+foods << Food.create!({ name:"Limonada con Jengibre", menu_id: 20 })
+foods << Food.create!({ name:"Jugo de Naranja", menu_id: 20 })
+foods << Food.create!({ name:"Jugo de Piña", menu_id: 20 })
